@@ -2,6 +2,8 @@ package bin.eventmanagement;
 
 import java.util.*;
 
+//testing 
+
 public class Customer {
     private String name;
     private String email;
