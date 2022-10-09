@@ -15,14 +15,15 @@ abstract class EventInfo {
     private String customFoodMenu;
     private String requests;
     private String canceledOrder;
-
+    ArrayList FoodAvalible = new ArrayList<String>();
+    
     public String GetVenue() {
         String placeholder = "placeholder";
         return placeholder;
     }
 
     public String GetEventID() {
-        String placeholder = "placeholder";
+        String placeholder = "15367658";
         return placeholder;
     }
 
@@ -32,9 +33,8 @@ abstract class EventInfo {
     }
 
     public ArrayList<String> ViewFoodMenu() {
-        ArrayList placeholder = new ArrayList<String>();
-        // stuff here
-        return placeholder;
+        
+        return FoodAvalible;
     }
 
     public ArrayList<String> ViewOptional() {
@@ -43,7 +43,7 @@ abstract class EventInfo {
         return placeholder;
     }
 
-    private void SelectOptionalService(String musicBand, String soundSystem, String flowers) {
+    private void SelectOptionalService(String service) {
         ;
     }
 }

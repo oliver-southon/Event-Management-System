@@ -50,13 +50,6 @@ public class Event extends EventInfo{
         this.numOfPeople = numOfPeople;
     }
 
-    public ArrayList<String> FoodPackages() {
-        ArrayList FoodAvalible = new ArrayList<String>();
-        FoodAvalible.add("Food Menu 1");
-        FoodAvalible.add("Food Menu 2");
-        FoodAvalible.add("Food Menu 3");
-        return FoodAvalible;
-    }
 
     private void SelectFood(String foodMenuName) {
         foodPackageSelected = foodMenuName;
