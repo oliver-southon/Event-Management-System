@@ -15,6 +15,8 @@ abstract class EventInfo {
     private String customFoodMenu;
     private String requests;
     private String canceledOrder;
+    ArrayList FoodAvalible = new ArrayList<String>();
+    ArrayList placeholder = new ArrayList<String>();
 
     public String GetVenue() {
         String placeholder = "placeholder";
@@ -22,7 +24,7 @@ abstract class EventInfo {
     }
 
     public String GetEventID() {
-        String placeholder = "placeholder";
+        String placeholder = "15367658";
         return placeholder;
     }
 
@@ -32,18 +34,20 @@ abstract class EventInfo {
     }
 
     public ArrayList<String> ViewFoodMenu() {
-        ArrayList placeholder = new ArrayList<String>();
-        // stuff here
-        return placeholder;
+        FoodAvalible.add("Food Option 1");
+        FoodAvalible.add("Food Option 1");
+        FoodAvalible.add("Food Option 1");
+        return FoodAvalible;
     }
 
     public ArrayList<String> ViewOptional() {
-        ArrayList placeholder = new ArrayList<String>();
-        // stuff here
+        placeholder.add("Music Band");
+        placeholder.add("Flowers");
+        placeholder.add("Sound System");
         return placeholder;
     }
 
-    private void SelectOptionalService(String musicBand, String soundSystem, String flowers) {
-        ;
+    private void SelectOptionalService(String service) {
+        System.out.println("the optional service of " + service + " has been selected and put on the sytem");
     }
 }

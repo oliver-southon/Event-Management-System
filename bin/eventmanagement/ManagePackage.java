@@ -6,7 +6,7 @@ public class ManagePackage {
     private String overview;
     private String eventType;
 
-    private void ReviseGuestLimit(int numGuest) {
+    private void ReviseGuestLimit(int numGuest) { 
         ;
     }
 
