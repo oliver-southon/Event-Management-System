@@ -4,12 +4,12 @@ import java.util.*;
 
 public class Event extends EventInfo{
     private String virtualTour;
-    String venueSelected;
-    String packageSelected;
-    int numOfPeople;
-    String foodPackageSelected;
+    static String venueSelected;
+    static String packageSelected;
+    static String numOfPeople;
+    static String foodPackageSelected;
 
-    public ArrayList<String> ViewVenue() {
+    public static ArrayList<String> ViewVenue() {
         ArrayList venue = new ArrayList<String>();
         venue.add("Marvel Stadium");
         venue.add("ACMI");
@@ -18,7 +18,7 @@ public class Event extends EventInfo{
         return venue;
     }
 
-    private void SelectVenue(String p) {
+    public static void SelectVenue(String p) {
         venueSelected = p;
     }
 
@@ -32,26 +32,26 @@ public class Event extends EventInfo{
         return placeholder;
     }
 
-    public boolean Availability() {
+    public static boolean Availability() {
         Boolean placeholder = true;
         return placeholder;
     }
 
-    public ArrayList<String> EventPackages() {
+    public static ArrayList<String> EventPackages() {
         ArrayList placeholder = new ArrayList<String>();
-        placeholder.add("Family events (up to 15 people). $300 - $600");
-        placeholder.add("Party events (up to 50 people). $800 - $1400");
-        placeholder.add("Grand events (up to 150 people). $2000 - $3000");
+        placeholder.add("1. Family events (up to 15 people). $300 - $600");
+        placeholder.add("2. Party events (up to 50 people). $800 - $1400");
+        placeholder.add("3. Grand events (up to 150 people). $2000 - $3000");
         return placeholder;
     }
 
-    private void SelectPackage(String packageName, int numOfPeople) {
+     public static void SelectPackage(String packageName, String temp) {
         packageSelected = packageName;
-        this.numOfPeople = numOfPeople;
+        numOfPeople = temp;
     }
 
 
-    private void SelectFood(String foodMenuName) {
+    public static void SelectFood(String foodMenuName) {
         foodPackageSelected = foodMenuName;
     }
 }

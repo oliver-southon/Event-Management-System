@@ -22,9 +22,11 @@ abstract class Employee extends OrganiseServices{
         return placeholder;
     }
 
-    public ArrayList<String> ViewSelectedOptionalService() {
+    public static ArrayList<String> ViewSelectedOptionalService() {
         ArrayList placeholder = new ArrayList<String>();
-        // stuff here
+        placeholder.add("flowers");
+        placeholder.add("Sound system");
+        placeholder.add("Music Band");
         return placeholder;
     }
 }
