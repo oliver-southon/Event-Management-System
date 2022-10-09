@@ -4,15 +4,22 @@ import java.util.*;
 
 public class Event extends EventInfo{
     private String virtualTour;
+    String venueSelected;
+    String packageSelected;
+    int numOfPeople;
+    String foodPackageSelected;
 
     public ArrayList<String> ViewVenue() {
         ArrayList venue = new ArrayList<String>();
-        // stuff here
+        venue.add("Marvel Stadium");
+        venue.add("ACMI");
+        venue.add("RMIT");
+        venue.add("Melbourne museum");
         return venue;
     }
 
     private void SelectVenue(String p) {
-        ;
+        venueSelected = p;
     }
 
     public String VirtualTour() {
@@ -32,16 +39,27 @@ public class Event extends EventInfo{
 
     public ArrayList<String> EventPackages() {
         ArrayList placeholder = new ArrayList<String>();
-        // stuff here
+        placeholder.add("Family events (up to 15 people). $300 - $600");
+        placeholder.add("Party events (up to 50 people). $800 - $1400");
+        placeholder.add("Grand events (up to 150 people). $2000 - $3000");
         return placeholder;
     }
 
-    private void SelectPackage(String packageName) {
-        ;
+    private void SelectPackage(String packageName, int numOfPeople) {
+        packageSelected = packageName;
+        this.numOfPeople = numOfPeople;
+    }
+
+    public ArrayList<String> FoodPackages() {
+        ArrayList FoodAvalible = new ArrayList<String>();
+        FoodAvalible.add("Food Menu 1");
+        FoodAvalible.add("Food Menu 2");
+        FoodAvalible.add("Food Menu 3");
+        return FoodAvalible;
     }
 
     private void SelectFood(String foodMenuName) {
-        ;
+        foodPackageSelected = foodMenuName;
     }
 }
 
